@@ -556,48 +556,45 @@
 
 .artwork-card{
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    
-    padding:60px;
-    
-    }
-    
-    .artwork-image{
-    
-    width:100%;
-    display:flex;
-    justify-content:center;
-    
-    }
-    
-    .artwork-image img{
-    
-    width:min(100%, 850px);   /* povečaj na 850px */
-    height:auto;
-    
-    border-radius:30px;
-    
-    border:2px solid rgba(120,190,255,.35);
-    
-    box-shadow:
-    0 0 40px rgba(0,120,255,.35),
-    0 0 100px rgba(0,120,255,.25);
-    
-    transition:.45s;
-    
-    }
-    
-    .artwork-card:hover img{
-    
-    transform:scale(1.03);
-    
-    box-shadow:
-    0 0 60px rgba(0,150,255,.45),
-    0 0 140px rgba(0,140,255,.35);
-    
-    }
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   
+   padding:35px;
+   
+   }
+   
+   .artwork-image{
+   
+   width:100%;
+   display:flex;
+   justify-content:center;
+   
+   }
+   
+   .artwork-image img{
+   
+   width:70%;
+   max-width:550px;
+   height:auto;
+   
+   border-radius:28px;
+   
+   border:2px solid rgba(120,190,255,.35);
+   
+   box-shadow:
+   0 0 35px rgba(0,120,255,.35),
+   0 0 90px rgba(0,120,255,.25);
+   
+   transition:.45s;
+   
+   }
+   
+   .artwork-card:hover img{
+   
+   transform:scale(1.03);
+   
+   }
     /* =======================================
        INVI
     ======================================= */
