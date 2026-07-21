@@ -1019,53 +1019,100 @@
     
     }
     
-    /* =======================================
-       SARA
-    ======================================= */
-    
-    .sara-card{
-    
-    background:
-    
-    linear-gradient(
-    145deg,
-    rgba(255, 0, 179, 0.652),
-    rgba(0,210,255,.05)
-    );
-    
-    overflow:hidden;
-    
-    }
-    
-    .sara-card::before{
-    
-    content:"🌊";
-    
-    position:absolute;
-    
-    font-size:160px;
-    
-    right:20px;
-    bottom:-20px;
-    
-    opacity:.06;
-    
-    }
-    
-    .sara-card::after{
-    
-    content:"☀️";
-    
-    position:absolute;
-    
-    top:25px;
-    right:25px;
-    
-    font-size:60px;
-    
-    opacity:.18;
-    
-    }
+   /* =======================================
+   SARA
+======================================= */
+
+.sara-card{
+
+   position:relative;
+   
+   background:
+   linear-gradient(
+   145deg,
+   #ff4fb8,
+   #ff79cf,
+   #ffb0e6
+   );
+   
+   border:2px solid rgba(255,170,220,.45);
+   
+   box-shadow:
+   0 0 35px rgba(255,105,180,.18);
+   
+   overflow:hidden;
+   
+   }
+   
+   .sara-card::before{
+   
+   content:"🩷";
+   
+   position:absolute;
+   
+   top:-30px;
+   left:-20px;
+   
+   font-size:170px;
+   
+   opacity:.08;
+   
+   transform:rotate(-20deg);
+   
+   }
+   
+   .sara-card::after{
+   
+   content:"✨";
+   
+   position:absolute;
+   
+   right:25px;
+   top:20px;
+   
+   font-size:70px;
+   
+   opacity:.3;
+   
+   animation:sparkle 2.5s ease-in-out infinite;
+   
+   }
+   
+   .sara-card .quote{
+   
+   color:white;
+   
+   text-shadow:
+   0 0 8px rgba(255,255,255,.12);
+   
+   }
+   
+   .sara-card:hover{
+   
+   transform:
+   translateY(-8px)
+   scale(1.02);
+   
+   box-shadow:
+   0 25px 70px rgba(255,105,180,.35);
+   
+   }
+   
+   @keyframes sparkle{
+   
+   0%,100%{
+   
+   transform:scale(1) rotate(0deg);
+   
+   }
+   
+   50%{
+   
+   transform:scale(1.2) rotate(20deg);
+   
+   }
+   
+   }
     
     /* =======================================
        BOUHA
